@@ -1,9 +1,10 @@
-import Navbar from '../components/Navbar';
+import Layout from '../components/layout';
 
 const About = () => (
   <>
-    <Navbar />
-    <h1>Som cool stuff</h1>
+    <Layout>
+      <h1>Som cool stuff</h1>
+    </Layout>
   </>
 );
 

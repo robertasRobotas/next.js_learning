@@ -1,8 +1,7 @@
-import Navbar from '../components/Navbar';
+import Layout from '../components/layout';
 
 export default () => (
   <>
-    <Navbar />
-    Hello
+    <Layout>Hello</Layout>
   </>
 );
