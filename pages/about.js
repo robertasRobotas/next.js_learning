@@ -1,8 +1,10 @@
 import Navbar from '../components/Navbar';
 
-export default () => (
+const About = () => (
   <>
     <Navbar />
-    Hello
+    <h1>Som cool stuff</h1>
   </>
 );
+
+export default About;
