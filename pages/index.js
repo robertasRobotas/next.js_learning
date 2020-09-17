@@ -1,11 +1,11 @@
 import Layout from '../components/layout';
 import Prices from '../components/Prices';
 
-const Index = ({ bpi }) => (
+const Index = ({ fetchData }) => (
   <>
     <Layout>
       Hello
-      <Prices usd={bpi.USD} />
+      <Prices data={fetchData} />
     </Layout>
   </>
 );
@@ -13,8 +13,7 @@ const Index = ({ bpi }) => (
 Index.getInitialProps = async () => {
   const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
   const data = await res.json();
-
-  return { bpi: data.bpi };
+  return { fetchData: data };
 };
 
 export default Index;
